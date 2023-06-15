@@ -5,12 +5,12 @@ public class DigitsSum {
 
         int sum;
 
-        for(sum = 0; t > 0 ; sum += t % 10, t /= 10){
+        for(sum = 0; t > 0; ){
 
-            System.out.println(sum + t);
-
-
+            sum += t % 10;
+            t /= 10;
         }
+        System.out.println(sum + t);
 
     }
 }

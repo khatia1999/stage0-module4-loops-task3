@@ -3,18 +3,21 @@ package school.mjc.stage0.loops.task3;
 public class NinesSum {
     public void calculateSum(int lengthOfLastNumber) {
 
-        int sum = 0;
+       long sum = 0;
+
+       if(lengthOfLastNumber <= 0){
+           System.out.println(0);
+       } else{
 
         for(int i = 1; i <= lengthOfLastNumber; i++){
 
-            sum += lengthOfLastNumber; // პირველად იქნება 0+9=9;
+            sum += lengthOfLastNumber;
 
             lengthOfLastNumber= lengthOfLastNumber * 10 + 9;
 
-            System.out.println(sum);
-
        }
-
+           System.out.println(sum);
+       }
 
 
     }

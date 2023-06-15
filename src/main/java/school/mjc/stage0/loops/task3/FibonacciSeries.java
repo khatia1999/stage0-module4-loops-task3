@@ -5,8 +5,7 @@ public class FibonacciSeries {
       int  firstTerm = 0;
       int secondTerm = 1;
 
-        for(int i = 1; i <= lastFibonacci; i++){
-
+        for(int i = 0; i <= lastFibonacci; i++){
 
             int nextTerm = firstTerm + secondTerm;
             firstTerm = secondTerm;
